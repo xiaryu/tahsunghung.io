@@ -1,8 +1,10 @@
 <?php
-$host = "localhost"; 
-$user = "root"; 
-$pass = ""; 
-$dbname = "db_permintaan_barang"; 
+$config = parse_ini_file('.env.ini');
+
+$host = $config['DB_HOST'];
+$user = $config['DB_USER'];
+$pass = $config['DB_PASS'];
+$dbname = $config['DB_NAME'];
 
 $koneksi = new mysqli($host, $user, $pass, $dbname);
 
