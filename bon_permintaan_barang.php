@@ -6,7 +6,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
 }
 
 // Koneksi database
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 // Proses simpan data baru
 if (isset($_POST['simpan'])) {

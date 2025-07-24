@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 if (isset($_POST['simpan'])) {
     mysqli_query($koneksi, "INSERT INTO authorization_file (no, name_list, nik, department, authorization_sign)

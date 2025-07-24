@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 $data = mysqli_query($koneksi, "SELECT * FROM tracking_asset ORDER BY asset_name ASC");
 ?>
 

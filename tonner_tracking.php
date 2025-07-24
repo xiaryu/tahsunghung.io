@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 // Ambil data stok tonner
 $data = mysqli_query($koneksi, "SELECT * FROM tonner_tracking ORDER BY department ASC");

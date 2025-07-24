@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 header('Content-Type: text/csv');
 header('Content-Disposition: attachment; filename="tonner_tracking.csv"');

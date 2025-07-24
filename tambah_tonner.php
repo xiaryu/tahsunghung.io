@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 if (isset($_POST['simpan'])) {
     $sql = "INSERT INTO tonner_tracking (code, item, qty, department, printer_type, printer_name, toner_type, max_qty, jan, feb, mar, apr, mei, jun, remark)

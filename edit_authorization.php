@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 $id = $_GET['id'];
 $data = mysqli_query($koneksi, "SELECT * FROM authorization_file WHERE id='$id'");
 $row = mysqli_fetch_assoc($data);
