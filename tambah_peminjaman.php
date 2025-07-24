@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 if (isset($_POST['simpan'])) {
     $sql = "INSERT INTO peminjaman_barang 

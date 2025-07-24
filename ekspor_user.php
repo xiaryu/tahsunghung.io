@@ -5,7 +5,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
     exit();
 }
 
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 // Set header agar file diunduh sebagai CSV
 header('Content-Type: text/csv');

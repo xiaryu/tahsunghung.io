@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 $nama = $_POST['nama'];
 $nik = $_POST['nik'];

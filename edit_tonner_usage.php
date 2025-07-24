@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 $id = $_GET['id'];
 $data = mysqli_fetch_assoc(mysqli_query($koneksi, "SELECT * FROM tonner_usage WHERE id='$id'"));
 

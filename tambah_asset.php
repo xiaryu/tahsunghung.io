@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 if (isset($_POST['simpan'])) {
     $sql = "INSERT INTO tracking_asset (asset_code, asset_name, sn_number)

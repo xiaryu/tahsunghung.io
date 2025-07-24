@@ -5,7 +5,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
     exit();
 }
 
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 // Ambil semua user
 $data_user = mysqli_query($koneksi, "SELECT * FROM user ORDER BY username ASC");

@@ -5,7 +5,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'user') {
     exit();
 }
 
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 // Proses Simpan Formulir
 if (isset($_POST['simpan'])) {

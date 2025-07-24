@@ -1,6 +1,6 @@
 <?php
 // Koneksi database
-$koneksi = mysqli_connect("localhost", "root", "", "db_permintaan_barang");
+require 'koneksi.php';
 
 // Set header agar browser mendownload file CSV
 header('Content-Type: text/csv');
